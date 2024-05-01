@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// builder.Services.AddDbContext<VCT_DATABASE>(
+//     options => {
+//         options.UseSqlServer(builder.Configuration.GetConnectionString("VCT_DATABASE"));
+//         options.UseLazyLoadingProxies();
+//     });
 
 var app = builder.Build();
 
