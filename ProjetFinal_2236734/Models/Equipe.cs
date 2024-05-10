@@ -30,18 +30,18 @@ public partial class Equipe
     public int? LigueId { get; set; }
 
     [InverseProperty("Equipe")]
-    public virtual ICollection<Coach> Coaches { get; } = new List<Coach>();
+    public virtual ICollection<Coach> Coaches { get; set; } = new List<Coach>();
 
     [InverseProperty("Equipe")]
-    public virtual ICollection<Joueur> Joueurs { get; } = new List<Joueur>();
+    public virtual ICollection<Joueur> Joueurs { get; set; } = new List<Joueur>();
 
     [ForeignKey("LigueId")]
     [InverseProperty("Equipes")]
     public virtual Ligue? Ligue { get; set; }
 
     [InverseProperty("Equipe")]
-    public virtual ICollection<SplitResult> SplitResults { get; } = new List<SplitResult>();
+    public virtual ICollection<SplitResult> SplitResults { get; set; } = new List<SplitResult>();
 
     [InverseProperty("Equipe")]
-    public virtual ICollection<TournoisResult> TournoisResults { get; } = new List<TournoisResult>();
+    public virtual ICollection<TournoisResult> TournoisResults { get; set; } = new List<TournoisResult>();
 }

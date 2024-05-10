@@ -26,5 +26,5 @@ public partial class Ligue
     public string Logo { get; set; } = null!;
 
     [InverseProperty("Ligue")]
-    public virtual ICollection<Equipe> Equipes { get; } = new List<Equipe>();
+    public virtual ICollection<Equipe> Equipes { get; set; } = new List<Equipe>();
 }

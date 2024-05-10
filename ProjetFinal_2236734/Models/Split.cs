@@ -23,5 +23,5 @@ public partial class Split
     public int? LigueId { get; set; }
 
     [InverseProperty("Split")]
-    public virtual ICollection<SplitResult> SplitResults { get; } = new List<SplitResult>();
+    public virtual ICollection<SplitResult> SplitResults { get; set; } = new List<SplitResult>();
 }

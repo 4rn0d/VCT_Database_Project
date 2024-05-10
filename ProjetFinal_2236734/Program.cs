@@ -1,15 +1,16 @@
 using Microsoft.EntityFrameworkCore;
+using ProjetFinal_2236734.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// builder.Services.AddDbContext<VCT_DATABASE>(
-//     options => {
-//         options.UseSqlServer(builder.Configuration.GetConnectionString("VCT_DATABASE"));
-//         options.UseLazyLoadingProxies();
-//     });
+builder.Services.AddDbContext<VctDatabaseContext>(
+    options => {
+        options.UseSqlServer(builder.Configuration.GetConnectionString("VCT_DATABASE"));
+        options.UseLazyLoadingProxies();
+    });
 
 var app = builder.Build();
 

@@ -34,6 +34,8 @@ public partial class VctDatabaseContext : DbContext
 
     public virtual DbSet<TournoisResult> TournoisResults { get; set; }
 
+    public virtual DbSet<VwEquipeLigueArgentCoach> VwEquipeLigueArgentCoaches { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Name=VCT_DATABASE");
 
@@ -41,7 +43,7 @@ public partial class VctDatabaseContext : DbContext
     {
         modelBuilder.Entity<Changelog>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83FEED4D992");
+            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83F2C4FE977");
 
             entity.Property(e => e.InstalledOn).HasDefaultValueSql("(getdate())");
         });
@@ -98,6 +100,11 @@ public partial class VctDatabaseContext : DbContext
             entity.HasOne(d => d.Equipe).WithMany(p => p.TournoisResults).HasConstraintName("FK_TournoisResult_EquipeID");
 
             entity.HasOne(d => d.Tournois).WithMany(p => p.TournoisResults).HasConstraintName("FK_TournoisResult_TournoisID");
+        });
+
+        modelBuilder.Entity<VwEquipeLigueArgentCoach>(entity =>
+        {
+            entity.ToView("vw_EquipeLigueArgentCoach", "Equipes");
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -1,6 +1,7 @@
 -Scaffold
 
-dotnet ef dbcontext scaffold Name=VCT Microsoft.EntityFrameworkCore.SqlServer -o Models --context-dir Data --data-annotations --force
+dotnet ef dbcontext scaffold Name=VCT_DATABASE Microsoft.EntityFrameworkCore.SqlServer -o Models --context-dir Data --data-annotations --force
+
 
 -Migrations
 

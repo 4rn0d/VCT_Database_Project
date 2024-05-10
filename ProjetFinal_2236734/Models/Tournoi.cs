@@ -35,5 +35,5 @@ public partial class Tournoi
     public string Logo { get; set; } = null!;
 
     [InverseProperty("Tournois")]
-    public virtual ICollection<TournoisResult> TournoisResults { get; } = new List<TournoisResult>();
+    public virtual ICollection<TournoisResult> TournoisResults { get; set; } = new List<TournoisResult>();
 }
