@@ -1,20 +1,23 @@
-CREATE PROCEDURE Equipes.USP_ChiffrerArgent(@Argent decimal)
-AS
-BEGIN
-    OPEN SYMMETRIC KEY MaSuperCle DECRYPTION BY CERTIFICATE MonCertificat;
-    DECLARE @ArgentChiffre varbinary(max) = ENCRYPTBYKEY(KEY_GUID('MaSuperCle'), @Argent);
-    CLOSE SYMMETRIC KEY MaSuperCle;
-
-    INSERT INTO Equipes.vw(ArgentGagner)
-END
+CREATE TABLE Equipes.DateCreation(
+    DateCreation varbinary(max)
+);
 GO
 
-CREATE PROCEDURE Equipes.USP_DechiffrerArgent(@Argent decimal)
+OPEN SYMMETRIC KEY MaSuperCle
+DECRYPTION BY CERTIFICATE MonCertificat;
+GO
+
+UPDATE Equipes.Equipe
+SET DateCreation = EncryptByKey(KEY_GUID('MaSuperCle'), CONVERT(varbinary(max),Equipe.DateCreation))
+GO
+
+CREATE PROCEDURE Equipes.USP_DechiffrerDateCreation(@EquipeId decimal)
 AS
 BEGIN
-    OPEN SYMMETRIC KEY MaSuperCle DECRYPTION BY CERTIFICATE MonCertificat;
-    SELECT CONVERT(decimal, DECRYPTBYKEY(ArgentGagner)) AS [Argent];
-    DECLARE @ArgentChiffre varbinary(max) = ENCRYPTBYKEY(KEY_GUID('MaSuperCle'), @Argent);
-    CLOSE SYMMETRIC KEY MaSuperCle;
+OPEN SYMMETRIC KEY MaSuperCle DECRYPTION BY CERTIFICATE MonCertificat;
+SELECT DECRYPTBYKEY(DateCreation) AS DateCreation
+FROM Equipe
+WHERE EquipeId = @EquipeId;
+CLOSE SYMMETRIC KEY MaSuperCle;
 END
 GO

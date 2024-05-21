@@ -116,142 +116,142 @@ GO
 
 --Americas
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('100 Thieves', 'https://liquipedia.net/commons/images/c/c2/100_Thieves_lightmode.png', CAST('2016-04-18' AS Date), 'Partner', 1)
+VALUES ('100 Thieves', 'https://liquipedia.net/commons/images/c/c2/100_Thieves_lightmode.png', CAST('2016-04-18' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Cloud9', 'https://liquipedia.net/commons/images/f/f8/Cloud9_allmode.png', CAST('2013-01-01' AS Date), 'Partner', 1)
+VALUES ('Cloud9', 'https://liquipedia.net/commons/images/f/f8/Cloud9_allmode.png', CAST('2013-01-01' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Evil Geniuses', 'https://liquipedia.net/commons/images/8/8c/Evil_Geniuses_2020_lightmode.png', CAST('1999-01-01' AS Date), 'Partner', 1)
+VALUES ('Evil Geniuses', 'https://liquipedia.net/commons/images/8/8c/Evil_Geniuses_2020_lightmode.png', CAST('1999-01-01' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('FURIA Esports', 'https://liquipedia.net/commons/images/a/aa/FURIA_Esports_allmode.png', CAST('2017-08-10' AS Date), 'Partner', 1)
+VALUES ('FURIA Esports', 'https://liquipedia.net/commons/images/a/aa/FURIA_Esports_allmode.png', CAST('2017-08-10' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('KRÜ Esports', 'https://liquipedia.net/commons/images/b/bf/KRU_Esports_allmode.png', CAST('2020-10-15' AS Date), 'Partner', 1)
+VALUES ('KRÜ Esports', 'https://liquipedia.net/commons/images/b/bf/KRU_Esports_allmode.png', CAST('2020-10-15' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Leviatán ', 'https://liquipedia.net/commons/images/e/ec/Leviat%C3%A1n_allmode.png', CAST('2020-11-04' AS Date), 'Partner', 1)
+VALUES ('Leviatán ', 'https://liquipedia.net/commons/images/e/ec/Leviat%C3%A1n_allmode.png', CAST('2020-11-04' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('LOUD', 'https://liquipedia.net/commons/images/8/8b/LOUD_allmode.png', CAST('2019-02-09' AS Date), 'Partner', 1)
+VALUES ('LOUD', 'https://liquipedia.net/commons/images/8/8b/LOUD_allmode.png', CAST('2019-02-09' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('MIBR ', 'https://liquipedia.net/commons/images/8/85/MIBR_2018_lightmode.png', CAST('2018-06-07' AS Date), 'Partner', 1)
+VALUES ('MIBR ', 'https://liquipedia.net/commons/images/8/85/MIBR_2018_lightmode.png', CAST('2018-06-07' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('NRG ', 'https://liquipedia.net/commons/images/d/dc/NRG_2020_lightmode.png', CAST('2015-11-16' AS Date), 'Partner', 1)
+VALUES ('NRG ', 'https://liquipedia.net/commons/images/d/dc/NRG_2020_lightmode.png', CAST('2015-11-16' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Sentinels', 'https://liquipedia.net/commons/images/1/13/Sentinels_2020_allmode.png', CAST('2018-06-06' AS Date), 'Partner', 1)
+VALUES ('Sentinels', 'https://liquipedia.net/commons/images/1/13/Sentinels_2020_allmode.png', CAST('2018-06-06' AS varbinary(max)), 'Partner', 1)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('G2 Esports', 'https://liquipedia.net/commons/images/4/4b/G2_Esports_2020_lightmode.png', CAST('2013-11-01' AS Date), 'Ascended', 1)
+VALUES ('G2 Esports', 'https://liquipedia.net/commons/images/4/4b/G2_Esports_2020_lightmode.png', CAST('2013-11-01' AS varbinary(max)), 'Ascended', 1)
 
 
 --EMEA
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('BBL Esports', 'https://liquipedia.net/commons/images/4/4e/BBL_Esports_2022_lightmode.png', CAST('2020-07-21' AS Date), 'Partner', 2)
+VALUES ('BBL Esports', 'https://liquipedia.net/commons/images/4/4e/BBL_Esports_2022_lightmode.png', CAST('2020-07-21' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Fnatic', 'https://liquipedia.net/commons/images/f/f9/Fnatic_2020_allmode.png', CAST('2004-07-23' AS Date), 'Partner', 2)
+VALUES ('Fnatic', 'https://liquipedia.net/commons/images/f/f9/Fnatic_2020_allmode.png', CAST('2004-07-23' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('FUT Esports', 'https://liquipedia.net/commons/images/9/90/Futbolist_2021_lightmode.png', CAST('1999-1-1' AS Date), 'Partner', 2)
+VALUES ('FUT Esports', 'https://liquipedia.net/commons/images/9/90/Futbolist_2021_lightmode.png', CAST('1999-1-1' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('GIANTX', 'https://liquipedia.net/commons/images/2/2d/GIANTX_lightmode.png', CAST('2023-12-14' AS Date), 'Partner', 2)
+VALUES ('GIANTX', 'https://liquipedia.net/commons/images/2/2d/GIANTX_lightmode.png', CAST('2023-12-14' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Karmine Corp', 'https://liquipedia.net/commons/images/0/0e/Karmine_Corp_lightmode.png', CAST('2020-03-30' AS Date), 'Partner', 2)
+VALUES ('Karmine Corp', 'https://liquipedia.net/commons/images/0/0e/Karmine_Corp_lightmode.png', CAST('2020-03-30' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('KOI', 'https://liquipedia.net/commons/images/7/71/KOI_2024_allmode.png', CAST('2021-12-15' AS Date), 'Partner', 2)
+VALUES ('KOI', 'https://liquipedia.net/commons/images/7/71/KOI_2024_allmode.png', CAST('2021-12-15' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Natus Vincere', 'https://liquipedia.net/commons/images/3/3f/Natus_Vincere_2021_lightmode.png', CAST('2009-12-17' AS Date), 'Partner', 2)
+VALUES ('Natus Vincere', 'https://liquipedia.net/commons/images/3/3f/Natus_Vincere_2021_lightmode.png', CAST('2009-12-17' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Team Heretics', 'https://liquipedia.net/commons/images/a/a4/Team_Heretics_2022_allmode.png', CAST('2016-08-24' AS Date), 'Partner', 2)
+VALUES ('Team Heretics', 'https://liquipedia.net/commons/images/a/a4/Team_Heretics_2022_allmode.png', CAST('2016-08-24' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Team Liquid', 'https://liquipedia.net/commons/images/c/c9/Team_Liquid_2020_lightmode.png', CAST('2000-01-01' AS Date), 'Partner', 2)
+VALUES ('Team Liquid', 'https://liquipedia.net/commons/images/c/c9/Team_Liquid_2020_lightmode.png', CAST('2000-01-01' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Team Vitality', 'https://liquipedia.net/commons/images/5/55/Team_Vitality_2021_allmode.png', CAST('2013-08-05' AS Date), 'Partner', 2)
+VALUES ('Team Vitality', 'https://liquipedia.net/commons/images/5/55/Team_Vitality_2021_allmode.png', CAST('2013-08-05' AS varbinary(max)), 'Partner', 2)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Gentle Mates', 'https://liquipedia.net/commons/images/3/34/Gentle_Mates_allmode.png', CAST('2023-04-13' AS Date), 'Ascended', 2)
+VALUES ('Gentle Mates', 'https://liquipedia.net/commons/images/3/34/Gentle_Mates_allmode.png', CAST('2023-04-13' AS varbinary(max)), 'Ascended', 2)
 
 
 --China
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('AG Esports', 'https://liquipedia.net/commons/images/c/cf/All_Gamers_allmode.png', CAST('1999-01-01' AS Date), 'Partner', 3)
+VALUES ('AG Esports', 'https://liquipedia.net/commons/images/c/cf/All_Gamers_allmode.png', CAST('1999-01-01' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Bilibili Gaming', 'https://liquipedia.net/commons/images/5/50/Bilibili_Gaming_2021_allmode.png', CAST('2017-12-16' AS Date), 'Partner', 3)
+VALUES ('Bilibili Gaming', 'https://liquipedia.net/commons/images/5/50/Bilibili_Gaming_2021_allmode.png', CAST('2017-12-16' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('EDward Gaming', 'https://liquipedia.net/commons/images/9/98/EDward_Gaming_2017_lightmode.png', CAST('2013-09-13' AS Date), 'Partner', 3)
+VALUES ('EDward Gaming', 'https://liquipedia.net/commons/images/9/98/EDward_Gaming_2017_lightmode.png', CAST('2013-09-13' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('FunPlus Phoenix', 'https://liquipedia.net/commons/images/2/20/FunPlus_Phoenix_2021_allmode.png', CAST('2017-12-21' AS Date), 'Partner', 3)
+VALUES ('FunPlus Phoenix', 'https://liquipedia.net/commons/images/2/20/FunPlus_Phoenix_2021_allmode.png', CAST('2017-12-21' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('JD Gaming', 'https://liquipedia.net/commons/images/d/d6/JD_Gaming_2021_allmode.png', CAST('2017-05-20' AS Date), 'Partner', 3)
+VALUES ('JD Gaming', 'https://liquipedia.net/commons/images/d/d6/JD_Gaming_2021_allmode.png', CAST('2017-05-20' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Nova Esports', 'https://liquipedia.net/commons/images/e/ee/Nova_Esports_LATAM_allmode.png', CAST('2016-06-01' AS Date), 'Partner', 3)
+VALUES ('Nova Esports', 'https://liquipedia.net/commons/images/e/ee/Nova_Esports_LATAM_allmode.png', CAST('2016-06-01' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('TYLOO', 'https://liquipedia.net/commons/images/5/5f/TyLoo_2016_allmode.png', CAST('2007-05-25' AS Date), 'Partner', 3)
+VALUES ('TYLOO', 'https://liquipedia.net/commons/images/5/5f/TyLoo_2016_allmode.png', CAST('2007-05-25' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Titan Esports Club', 'https://liquipedia.net/commons/images/1/1f/TEC_Esports_allmode.png', CAST('2017-01-01' AS Date), 'Partner', 3)
+VALUES ('Titan Esports Club', 'https://liquipedia.net/commons/images/1/1f/TEC_Esports_allmode.png', CAST('2017-01-01' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Trace Esports', 'https://liquipedia.net/commons/images/8/82/Trace_Esports_2023_allmode.png', CAST('2023-06-23' AS Date), 'Partner', 3)
+VALUES ('Trace Esports', 'https://liquipedia.net/commons/images/8/82/Trace_Esports_2023_allmode.png', CAST('2023-06-23' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Wolves Esports', 'https://liquipedia.net/commons/images/6/6c/Wolves_Esports_allmode.png', CAST('2017-02-08' AS Date), 'Partner', 3)
+VALUES ('Wolves Esports', 'https://liquipedia.net/commons/images/6/6c/Wolves_Esports_allmode.png', CAST('2017-02-08' AS varbinary(max)), 'Partner', 3)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Dragon Ranger Gaming', 'https://liquipedia.net/commons/images/4/40/Dragon_Ranger_Gaming_logo_without_text_allmode.png', CAST('2016-12-21' AS Date), 'Ascended', 3)
+VALUES ('Dragon Ranger Gaming', 'https://liquipedia.net/commons/images/4/40/Dragon_Ranger_Gaming_logo_without_text_allmode.png', CAST('2016-12-21' AS varbinary(max)), 'Ascended', 3)
 
 
 --Pacific
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('DetonatioN FocusMe', 'https://liquipedia.net/commons/images/2/27/DetonatioN_FocusMe_2022_lightmode.png', CAST('2012-07-01' AS Date), 'Partner', 4)
+VALUES ('DetonatioN FocusMe', 'https://liquipedia.net/commons/images/2/27/DetonatioN_FocusMe_2022_lightmode.png', CAST('2012-07-01' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('DRX', 'https://liquipedia.net/commons/images/1/1f/DRX_2023_lightmode.png', CAST('2018-01-07' AS Date), 'Partner', 4)
+VALUES ('DRX', 'https://liquipedia.net/commons/images/1/1f/DRX_2023_lightmode.png', CAST('2018-01-07' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Gen.G Esports', 'https://liquipedia.net/commons/images/3/3f/Gen.G_Esports_lightmode.png', CAST('2017-07-12' AS Date), 'Partner', 4)
+VALUES ('Gen.G Esports', 'https://liquipedia.net/commons/images/3/3f/Gen.G_Esports_lightmode.png', CAST('2017-07-12' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Global Esports', 'https://liquipedia.net/commons/images/2/23/Global_Esports_2020_allmode.png', CAST('2017-08-01' AS Date), 'Partner', 4)
+VALUES ('Global Esports', 'https://liquipedia.net/commons/images/2/23/Global_Esports_2020_allmode.png', CAST('2017-08-01' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Paper Rex', 'https://liquipedia.net/commons/images/8/8c/Paper_Rex_lightmode.png', CAST('2020-01-01' AS Date), 'Partner', 4)
+VALUES ('Paper Rex', 'https://liquipedia.net/commons/images/8/8c/Paper_Rex_lightmode.png', CAST('2020-01-01' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Rex Regum Qeon', 'https://liquipedia.net/commons/images/1/1e/Rex_Regum_Qeon_allmode.png', CAST('2013-10-22' AS Date), 'Partner', 4)
+VALUES ('Rex Regum Qeon', 'https://liquipedia.net/commons/images/1/1e/Rex_Regum_Qeon_allmode.png', CAST('2013-10-22' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('T1', 'https://liquipedia.net/commons/images/4/4e/T1_allmode.png', CAST('2002-10-01' AS Date), 'Partner', 4)
+VALUES ('T1', 'https://liquipedia.net/commons/images/4/4e/T1_allmode.png', CAST('2002-10-01' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Talon Esports', 'https://liquipedia.net/commons/images/7/7c/Talon_Esports_2019_allmode.png', CAST('2017-03-16' AS Date), 'Partner', 4)
+VALUES ('Talon Esports', 'https://liquipedia.net/commons/images/7/7c/Talon_Esports_2019_allmode.png', CAST('2017-03-16' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Team Secret', 'https://liquipedia.net/commons/images/0/07/Team_Secret_lightmode.png', CAST('2014-01-01' AS Date), 'Partner', 4)
+VALUES ('Team Secret', 'https://liquipedia.net/commons/images/0/07/Team_Secret_lightmode.png', CAST('2014-01-01' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('ZETA DIVISION', 'https://liquipedia.net/commons/images/4/4f/ZETA_DIVISION_lightmode.png', CAST('2017-04-01' AS Date), 'Partner', 4)
+VALUES ('ZETA DIVISION', 'https://liquipedia.net/commons/images/4/4f/ZETA_DIVISION_lightmode.png', CAST('2017-04-01' AS varbinary(max)), 'Partner', 4)
 
 INSERT [Equipes].[Equipe] ([Nom],[Logo],[DateCreation],[Type],[LigueID])
-VALUES ('Bleed Esports', 'https://liquipedia.net/commons/images/7/79/BLEED_Esports_2023_allmode.png', CAST('2021-09-30' AS Date), 'Ascended', 4)
+VALUES ('Bleed Esports', 'https://liquipedia.net/commons/images/7/79/BLEED_Esports_2023_allmode.png', CAST('2021-09-30' AS varbinary(max)), 'Ascended', 4)
 
 GO
 

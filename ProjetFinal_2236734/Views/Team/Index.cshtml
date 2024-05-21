@@ -23,6 +23,9 @@
                 @Html.DisplayNameFor(model => model.Coach)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.DateDeCréation)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.ArgentGagnerEnTrournois)
             </th>
             <th></th>
@@ -41,10 +44,13 @@
                 @Html.DisplayFor(modelItem => item.Coach)
             </td>
             <td>
+                Ce champs est encrypté. Pour voir la date de création, voir les détails.
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.ArgentGagnerEnTrournois)
             </td>
             <td>
-                @* <a asp-action="Details" asp-route-id="@item.EquipeId">Details</a> *@
+                <a asp-action="Details" asp-route-id="@item.ÉquipeId">Details</a>
             </td>
         </tr>
 }

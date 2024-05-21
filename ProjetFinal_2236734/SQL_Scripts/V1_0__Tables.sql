@@ -5,7 +5,7 @@ CREATE TABLE Equipes.Equipe(
     EquipeID int IDENTITY (1,1) NOT NULL,
     Nom nvarchar(50) NOT NULL,
     Logo nvarchar(250) NOT NULL,
-    DateCreation Date NOT NULL,
+    DateCreation varbinary(max) NOT NULL,
     Type nvarchar(50) NOT NULL
     CONSTRAINT PK_Equipes_EquipeID PRIMARY KEY (EquipeID)
 );

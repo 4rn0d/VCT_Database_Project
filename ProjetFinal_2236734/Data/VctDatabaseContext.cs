@@ -20,6 +20,8 @@ public partial class VctDatabaseContext : DbContext
 
     public virtual DbSet<Coach> Coaches { get; set; }
 
+    public virtual DbSet<DateCreation> DateCreations { get; set; }
+
     public virtual DbSet<Equipe> Equipes { get; set; }
 
     public virtual DbSet<Joueur> Joueurs { get; set; }
@@ -43,7 +45,7 @@ public partial class VctDatabaseContext : DbContext
     {
         modelBuilder.Entity<Changelog>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83F2C4FE977");
+            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83FDC1EEC51");
 
             entity.Property(e => e.InstalledOn).HasDefaultValueSql("(getdate())");
         });

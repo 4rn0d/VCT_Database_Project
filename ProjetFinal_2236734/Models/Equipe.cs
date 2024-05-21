@@ -20,8 +20,7 @@ public partial class Equipe
     [StringLength(250)]
     public string Logo { get; set; } = null!;
 
-    [Column(TypeName = "date")]
-    public DateTime DateCreation { get; set; }
+    public byte[] DateCreation { get; set; } = null!;
 
     [StringLength(50)]
     public string Type { get; set; } = null!;

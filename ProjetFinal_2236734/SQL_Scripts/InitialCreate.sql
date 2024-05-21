@@ -19,6 +19,7 @@ TO FILEGROUP FG_Images
 GO
 -- Configuration des clés symétriques
 -- il s'agit de créer la clé master, le certificat et enfin la clé symmétrique
+USE VCT_DATABASE
 CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'JaimeLesPatates1!'
 GO
 
@@ -30,5 +31,4 @@ GO
 
 OPEN SYMMETRIC KEY MaSuperCle DECRYPTION BY CERTIFICATE MonCertificat
 
-USE VCT_DATABASE
 GO

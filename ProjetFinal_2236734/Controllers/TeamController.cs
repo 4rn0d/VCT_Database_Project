@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using ProjetFinal_2236734.Data;
 using ProjetFinal_2236734.Models;
@@ -41,6 +43,18 @@ namespace ProjetFinal_2236734.Controllers
             if (equipe == null)
             {
                 return NotFound();
+            }
+
+            string query = "EXEC Equipes.USP_DechiffrerDateCreation @EquipeId";
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter{ParameterName = "@EquipeId", Value = id}
+            };
+            DateCreation dateCreation = (await _context.DateCreations.FromSqlRaw(query, parameters.ToArray()).ToListAsync()).FirstOrDefault();
+            if(dateCreation != null)
+            {
+                string date = Encoding.ASCII.GetString(dateCreation.DateCreation1);
+                ViewData["dateCreation"] = date;
             }
 
             return View(equipe);

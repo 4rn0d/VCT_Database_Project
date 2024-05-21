@@ -9,15 +9,20 @@ namespace ProjetFinal_2236734.Models;
 [Keyless]
 public partial class VwEquipeLigueArgentCoach
 {
-    [StringLength(50)]
-    public string Ligue { get; set; } = null!;
+    public int ÉquipeId { get; set; }
 
     [StringLength(50)]
     public string Équipe { get; set; } = null!;
+
+    [Column("Date de création")]
+    public byte[] DateDeCréation { get; set; } = null!;
 
     [Column("Argent gagner en trournois", TypeName = "decimal(38, 0)")]
     public decimal? ArgentGagnerEnTrournois { get; set; }
 
     [StringLength(50)]
     public string Coach { get; set; } = null!;
+
+    [StringLength(50)]
+    public string Ligue { get; set; } = null!;
 }
