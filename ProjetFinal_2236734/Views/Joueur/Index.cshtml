@@ -1,0 +1,88 @@
+@model IEnumerable<ProjetFinal_2236734.Models.Joueur>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    List<SelectListItem> roles = new List<SelectListItem>
+    {
+        new SelectListItem("Flex", "Flex"),
+        new SelectListItem("Controller", "Controller"),
+        new SelectListItem("Dualist", "Dualist"),
+        new SelectListItem("Initiator", "Initiator"),
+        new SelectListItem("Sentinel", "Sentinel"),
+    };
+    List<SelectListItem> years = new List<SelectListItem>
+    {
+        new SelectListItem("2005", "2005"),
+        new SelectListItem("2004", "2004"),
+        new SelectListItem("2003", "2003"),
+        new SelectListItem("2002", "2002"),
+        new SelectListItem("2001", "2001"),
+        new SelectListItem("2000", "2000"),
+        new SelectListItem("1999", "1999"),
+        new SelectListItem("1998", "1998"),
+        new SelectListItem("1997", "1997"),
+        new SelectListItem("1996", "1996"),
+        new SelectListItem("1995", "1995"),
+        new SelectListItem("1994", "1994"),
+        new SelectListItem("1993", "1993"),
+        new SelectListItem("1992", "1992"),
+        new SelectListItem("1991", "1991"),
+        new SelectListItem("1990", "1990"),
+    };
+}
+
+<form asp-controller="Joueur" asp-action="Filtrer">
+    @Html.DropDownList("Roles", roles, new { @class = "form-control" })
+    @Html.DropDownList("Years", years, new { @class = "form-control" })
+    <button type="submit">Chercher</button>
+</form>
+
+<h1>Les joueur au rôle de <u>@ViewBag.Role</u> et née après l'année <u>@ViewBag.Annee</u></h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pseudo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateNaissance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Equipe)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pseudo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateNaissance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Equipe.EquipeId)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
