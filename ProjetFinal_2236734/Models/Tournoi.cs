@@ -34,6 +34,9 @@ public partial class Tournoi
     [StringLength(250)]
     public string Logo { get; set; } = null!;
 
+    [InverseProperty("Tounois")]
+    public virtual ICollection<Image> Images { get; set; } = new List<Image>();
+
     [InverseProperty("Tournois")]
     public virtual ICollection<TournoisResult> TournoisResults { get; set; } = new List<TournoisResult>();
 }

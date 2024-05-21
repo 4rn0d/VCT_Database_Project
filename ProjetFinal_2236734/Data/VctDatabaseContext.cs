@@ -24,6 +24,8 @@ public partial class VctDatabaseContext : DbContext
 
     public virtual DbSet<Equipe> Equipes { get; set; }
 
+    public virtual DbSet<Image> Images { get; set; }
+
     public virtual DbSet<Joueur> Joueurs { get; set; }
 
     public virtual DbSet<Ligue> Ligues { get; set; }
@@ -45,7 +47,7 @@ public partial class VctDatabaseContext : DbContext
     {
         modelBuilder.Entity<Changelog>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83FDC1EEC51");
+            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83F3AEBECDA");
 
             entity.Property(e => e.InstalledOn).HasDefaultValueSql("(getdate())");
         });
@@ -62,6 +64,15 @@ public partial class VctDatabaseContext : DbContext
             entity.HasKey(e => e.EquipeId).HasName("PK_Equipes_EquipeID");
 
             entity.HasOne(d => d.Ligue).WithMany(p => p.Equipes).HasConstraintName("FK_Equipe_LigueID");
+        });
+
+        modelBuilder.Entity<Image>(entity =>
+        {
+            entity.HasKey(e => e.ImageId).HasName("PK_ImageId");
+
+            entity.Property(e => e.Identifiant).HasDefaultValueSql("(newid())");
+
+            entity.HasOne(d => d.Tounois).WithMany(p => p.Images).HasConstraintName("FK_Image_TournoisId");
         });
 
         modelBuilder.Entity<Joueur>(entity =>

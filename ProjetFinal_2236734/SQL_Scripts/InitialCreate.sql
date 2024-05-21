@@ -7,15 +7,15 @@ GO
 -- Configuration de FILESTREAM
 -- nous avons vu ça lors de la rencontre 19
 ALTER DATABASE VCT_DATABASE
-ADD FILEGROUP FG_Images CONTAINS FILESTREAM;
+ADD FILEGROUP FG_Images2236734 CONTAINS FILESTREAM;
 GO
 
 ALTER DATABASE VCT_DATABASE
 ADD FILE (
-	NAME = FG_Images,
-	FILENAMe = 'C:\EspaceLabo\FG_Images'
+	NAME = FG_Images2236734,
+	FILENAMe = 'C:\EspaceLabo\FG_Images2236734'
 )
-TO FILEGROUP FG_Images
+TO FILEGROUP FG_Images2236734
 GO
 -- Configuration des clés symétriques
 -- il s'agit de créer la clé master, le certificat et enfin la clé symmétrique
