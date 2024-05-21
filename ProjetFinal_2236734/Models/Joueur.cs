@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ProjetFinal_2236734.Models;
 
 [Table("Joueur", Schema = "Equipes")]
+[Index("JoueurId", Name = "IX_Joueur_JoueurID", AllDescending = true)]
 [Index("Pseudo", Name = "UC_Joueur_Pseudo", IsUnique = true)]
 public partial class Joueur
 {

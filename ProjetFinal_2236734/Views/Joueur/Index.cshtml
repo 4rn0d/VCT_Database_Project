@@ -37,7 +37,9 @@
 }
 
 <form asp-controller="Joueur" asp-action="Filtrer">
+    Role:
     @Html.DropDownList("Roles", roles, new { @class = "form-control" })
+    Année de naissance :
     @Html.DropDownList("Years", years, new { @class = "form-control" })
     <button type="submit">Chercher</button>
 </form>

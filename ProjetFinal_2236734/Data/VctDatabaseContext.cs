@@ -47,7 +47,7 @@ public partial class VctDatabaseContext : DbContext
     {
         modelBuilder.Entity<Changelog>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83F3AEBECDA");
+            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83FD4C92DE8");
 
             entity.Property(e => e.InstalledOn).HasDefaultValueSql("(getdate())");
         });

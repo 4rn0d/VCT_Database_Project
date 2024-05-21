@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ProjetFinal_2236734.Models;
 
 [Table("Tournois", Schema = "Competition")]
+[Index("DateDebut", Name = "IX_Tournois_DateDebut", AllDescending = true)]
 public partial class Tournoi
 {
     [Key]
